@@ -13,14 +13,16 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <>
+    <>     
       <Header />
       <Navbar />
+      <main className="pt-24"></main>
       <Home />
       <About />
       <Projects />
       <Contact />
       <Footer />
+      
     </>
   );
 }
