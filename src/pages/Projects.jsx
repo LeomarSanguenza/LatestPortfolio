@@ -6,8 +6,11 @@ const projects = [
 ];
 
 const Projects = () => (
-  <section id="projects">
-    <h2>Projects</h2>
+ <section
+    id="projects"
+    className="min-h-screen text-center bg-gray-100"
+    style={{ paddingTop: '7rem' }}
+  >    <h2>Projects</h2>
     {projects.map((proj, idx) => (
       <div key={idx}>
         <h3>{proj.title}</h3>

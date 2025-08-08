@@ -15,7 +15,9 @@ body {
   background-color: hsl(274, 74%, 9%);
 }
 
-
 .animate-fade-in-up {
   animation: fade-in-up 0.4s ease-out;
+}
+.neon-shadow {
+  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff;
 }
