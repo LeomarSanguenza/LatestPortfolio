@@ -47,20 +47,20 @@ const Home = () => {
                   animationFillMode: "forwards",
                   fontFamily: "'Courier New', monospace",
                   color: "white",
-                  textShadow: '0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff'
+                  // textShadow: '0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff'
                 }}
               >
                 {char === " " ? "\u00A0" : char}
               </span>
             ))}
           </div>
-          <h3 className="text-white text-[1.5rem] mt-4 text-center" style={{textShadow: '0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff', color: "white", fontFamily: "'Courier New', monospace" }}>Software Engineer</h3>
+          <h3 className="text-white text-[1.5rem] mt-4 text-center" style={{color: "white", fontFamily: "'Courier New', monospace" }}>Software Engineer</h3>
         </div>
       </div>
 
       <div className="h-[35vh] flex justify-center items-center">
   <img
-    className="neon-shadow w-68 transform border-3 border-white rotate-22 hover:rotate-0 transition-transform duration-500 ease-in-out rounded-2xl shadow-lg shadow-cyan-500/50"
+    className="neon-shadow w-68 transform border-3 border-white rotate-28 hover:rotate-0 transition-transform duration-500 ease-in-out rounded-2xl shadow-lg shadow-cyan-500/100"
     src="./src/assets/portfolioPic.jpg"
     alt="Portfolio"
   />

@@ -23,7 +23,7 @@ const Mousetrail = () => {
       lastMoveTime.current = Date.now();
       setTrail((prevTrail) => [
         { x: e.clientX, y: e.clientY },
-        ...prevTrail.slice(0, 50),
+        ...prevTrail.slice(0, 10),
       ]);
     };
 
@@ -49,7 +49,7 @@ const Mousetrail = () => {
         ctx.quadraticCurveTo(cpX, cpY, p2.x, p2.y);
 
         ctx.strokeStyle = `rgba(255, 230, 255, ${t})`; // neon purple
-        ctx.lineWidth = 9 * t;
+        ctx.lineWidth = 4 * t;
         ctx.shadowColor = `rgba(100, 0, 200, ${t})`;
         ctx.shadowBlur = 40 * t;
         ctx.stroke();

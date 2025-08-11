@@ -13,15 +13,15 @@ const About = () => (
         <h3 className="text-2xl font-semibold mb-4 text-cyan-600">🎓 Education</h3>
         <ul className="space-y-3">
           <li>
-            <h4 className="font-bold">Bachelor of Science in Computer Science</h4>
+            <h4 className="font-bold text-white">Bachelor of Science in Computer Science</h4>
             <p className="text-sm text-gray-600">Quezon City University, 2019–2023</p>
           </li>
           <li>
-            <h4 className="font-bold">Senior High School Diploma</h4>
+            <h4 className="font-bold text-white">Senior High School Diploma</h4>
             <p className="text-sm text-gray-600">ABE International Business College, 2017–2019</p>
           </li>
           <li>
-            <h4 className="font-bold">Junior High School Diploma</h4>
+            <h4 className="font-bold text-white ">Junior High School Diploma</h4>
             <p className="text-sm text-gray-600">Justice Cecilia Muñoz Palma High School, 2013–2017</p>
           </li>
         </ul>
@@ -32,11 +32,11 @@ const About = () => (
         <h3 className="text-2xl font-semibold mb-4 text-cyan-600">💼 Job Experience</h3>
         <ul className="space-y-3">
           <li>
-            <h4 className="font-bold">Frontend Developer</h4>
+            <h4 className="font-bold text-white">Frontend Developer</h4>
             <p className="text-sm text-gray-600">TechCorp Inc., 2023–Present</p>
           </li>
           <li>
-            <h4 className="font-bold">Intern Developer</h4>
+            <h4 className="font-bold text-white">Intern Developer</h4>
             <p className="text-sm text-gray-600">StartUp Studio, 2022–2023</p>
           </li>
         </ul>
