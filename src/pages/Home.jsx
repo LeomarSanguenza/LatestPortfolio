@@ -39,7 +39,7 @@ const Home = () => {
             {name.split("").map((char, index) => (
               <span
                 key={index}
-                className={`text-[6rem] sm:text-[4rem] md:text-[5rem] lg:text-[6rem] text-white opacity-0 ${
+                className={`text-[6rem] sm:text-[4rem] md:text-[5rem] lg:text-[6rem] text-white opacity-0 neon-shadow ${
                   isVisible ? "animate-fade-in-up" : ""
                 }`}
                 style={{
@@ -54,17 +54,33 @@ const Home = () => {
               </span>
             ))}
           </div>
-          <h3 className="text-white text-[1.5rem] mt-4 text-center" style={{color: "white", fontFamily: "'Courier New', monospace" }}>Software Engineer</h3>
+          <h3 className="text-white text-[2rem] mt-4 text-center" style={{color: "white", fontFamily: "'Courier New', monospace" }}>Software Engineer</h3>
         </div>
       </div>
 
-      <div className="h-[35vh] flex justify-center items-center">
-  <img
-    className="neon-shadow w-68 transform border-3 border-white rotate-28 hover:rotate-0 transition-transform duration-500 ease-in-out rounded-2xl shadow-lg shadow-cyan-500/100"
-    src="./src/assets/portfolioPic.jpg"
-    alt="Portfolio"
-  />
-</div>
+      <div className="h-[35vh] flex justify-between items-center w-full px-10">
+        {/* Left side - Facebook button */}
+        <div>
+          <button className="bg-blue-600 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-700 transition">
+            Facebook
+          </button>
+        </div>
+
+        {/* Right/center - image */}
+        <div className="flex justify-center items-center">
+        <img
+          className="neon-shadow w-68 transform border-3 border-white rotate-12 hover:rotate-0 transition-transform duration-500 ease-in-out rounded-2xl shadow-lg shadow-cyan-500/100"
+          src="./src/assets/portfolioPic.jpg"
+          alt="Portfolio"
+        />
+        </div>
+        <div>
+          <button className="bg-blue-600 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-700 transition">
+            Facebook
+          </button>
+        </div>
+    </div>
+
     </section>
   );
 };
