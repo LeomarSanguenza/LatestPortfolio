@@ -6,24 +6,26 @@ const About = () => {
   const sectionRef = useRef(null);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setInView(true);
-          observer.unobserve(entry.target); // run once
-        }
-      },
-      { threshold: 0.2 } // trigger when 20% is visible
-    );
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        setInView(true);
+      } else {
+        setInView(false); // reset when out of view
+      }
+    },
+    { threshold: 0.2 }
+  );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
+  if (sectionRef.current) {
+    observer.observe(sectionRef.current);
+  }
 
-    return () => {
-      if (sectionRef.current) observer.unobserve(sectionRef.current);
-    };
-  }, []);
+  return () => {
+    if (sectionRef.current) observer.unobserve(sectionRef.current);
+  };
+}, []);
+
 
   return (
     <section
